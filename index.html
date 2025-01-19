@@ -11,7 +11,7 @@
 <body>
 
     <!-- Main Section  -->
-    <section id="main">
+    <div id="main">
         <div class="container">
 
             <!-- Navbar Section  -->
@@ -24,6 +24,7 @@
                     <li><a href="#">Contact</a></li>
                     <li><button class="btn btn-secondary">880 130 155 1675</button></li>
                 </ul>
+                <img src="images/menu.svg" alt="" class="menu-btn">
             </nav>
 
             <!-- Banner Section  -->
@@ -34,7 +35,7 @@
                 <button class="btn btn-primary">Get Started</button>
              </div>
         </div>
-    </section>
+    </div>
 
     <!-- Services Section  -->
      <section id="services">
@@ -117,5 +118,16 @@
                 <p>Love Nature by Jannatul Lima</p>
             </div>
          </footer>
+
+         <!-- js section  -->
+          <script>
+            const navBtn = document.querySelector('.menu-btn')
+            const navList = document.querySelector('.nav-list')
+
+            navBtn.addEventListener('click', function(){
+                navList.classList.toggle('active');
+            });
+
+          </script>
 </body>
 </html>
