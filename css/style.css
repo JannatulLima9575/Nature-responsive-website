@@ -31,12 +31,68 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-list {
   display: flex;
   list-style: none;
   gap: 28px;
+  align-items: center;
 }
+.nav-list a {
+  color: var(--white);
+}
+.btn {
+  padding: 12px 20px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-secondary {
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-weight: bold;
+}
+.btn-primary {
+  border: none;
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+/* Banner Section  */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: var(--white);
+}
+.main-content .intro-heading {
+  font-size: 50px;
+}
+.main-content .main-heading {
+  font-size: 110px;
+  margin-top: -20px;
+}
+.main-content p {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+/* Responsive part  */
+@media screen and (max-width: 520px) {
+  .nav-list {
+    flex-direction: column;
+    background: gray;
+  }
+}
+
+
+
+
+
 /* .dm-sans-<uniquifier> {
 
   font-optical-sizing: auto;
