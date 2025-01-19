@@ -149,6 +149,20 @@ nav {
 /* about-us section  */
 #about-us .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+}
+#about-us .container .about-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+}
+#about-us .container .about-content h1 {
+  font-family: "Forum", serif;
+  font-size: 30px;
 }
 
 /* Responsive part  */
@@ -175,5 +189,9 @@ nav {
     width: 100%;
     padding: 10px 30px;
     margin-bottom: 1px solid var(--white);
+  }
+  #about-us .container {
+    flex-direction: column;
+    gap: 30px;
   }
 }
