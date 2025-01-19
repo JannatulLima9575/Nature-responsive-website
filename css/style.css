@@ -122,6 +122,35 @@ nav {
   transform: scale(1.05);
 }
 
+/* testimonial Section  */
+#testimonial {
+  background: #efefef;
+}
+#testimonial .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  gap: 30px;
+  padding: 50px 16px;
+}
+#testimonial h1 {
+  font-size: 30px;
+  font-family: "Forum", serif;
+  text-align: center;
+}
+#testimonial .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* about-us section  */
+#about-us .container {
+  display: flex;
+}
+
 /* Responsive part  */
 @media screen and (max-width: 520px) {
   .menu-btn {
@@ -148,21 +177,3 @@ nav {
     margin-bottom: 1px solid var(--white);
   }
 }
-
-
-
-
-
-/* .dm-sans-<uniquifier> {
-
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-Forum: CSS class
-
-.forum-regular {
-  font-family: "Forum", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
