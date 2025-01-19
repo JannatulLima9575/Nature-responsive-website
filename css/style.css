@@ -186,6 +186,23 @@ nav {
   font-size: 50px;
 }
 
+/* Footer Section  */
+footer  {
+  margin-top: -60px;
+}
+footer .container {
+  display: flex;
+  padding: 20px 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
 /* Responsive part  */
 @media screen and (max-width: 520px) {
   .menu-btn {
@@ -214,5 +231,9 @@ nav {
   #about-us .container {
     flex-direction: column;
     gap: 30px;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 16px;
   }
 }
