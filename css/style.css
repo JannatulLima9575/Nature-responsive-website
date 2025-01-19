@@ -1,15 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
     --primary: #536742;
     --secondary:#ffd936;
+    --white: #efefef;
 }
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 1000
-
-.dm-sans-<uniquifier> {
+body {
   font-family: "DM Sans", serif;
+  color: var(--primary);
+}
+#main {
+  background-image: url("../images/main.png");
+  min-height: 70vh;
+  background-position: bottom-center;
+  background-size: cover;
+} 
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 16px;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+/* .dm-sans-<uniquifier> {
+
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
@@ -20,4 +49,4 @@ Forum: CSS class
   font-family: "Forum", serif;
   font-weight: 400;
   font-style: normal;
-}
+} */
